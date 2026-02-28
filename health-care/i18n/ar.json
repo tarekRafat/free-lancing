@@ -1,0 +1,10 @@
+{
+  "login.title": "تسجيل الدخول في المنصة الجيومكانية",
+  "login.username": "اسم المستخدم",
+  "login.usernamePlaceholder": "أدخل بيانات التعريف الخاصة بك",
+  "login.password": "كلمة المرور",
+  "login.passwordPlaceholder": "أدخل كلمة المرور الخاصة بك",
+  "login.submit": "تسجيل الدخول",
+  "header.login": "تسجيل الدخول",
+  "header.language": "English"
+}

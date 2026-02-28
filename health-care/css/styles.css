@@ -1,0 +1,12 @@
+/* Custom styles and primary color override */
+:root {
+  --bs-primary: #1B8354; /* change this value to edit bootstrap primary color */
+}
+
+body {
+  background-color: #F9FAFB;
+}
+
+form h2 {
+  color: var(--bs-primary);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Portal - Login</title>
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="d-flex flex-column vh-100">
+    <!-- header with login and language buttons on left, logo on right -->
+    <header class="d-flex justify-content-between align-items-center p-3 bg-white">
+        <div>
+            <img src="assets/header-logo.svg" alt="Logo">
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="d-flex">
+                <img src="./assets/language.svg" alt="Language Icon">
+                <button class="btn btn-transparent" id="language-btn">English</button>
+            </div>
+            <button class="btn btn-primary me-2" id="header-login-btn">Login</button>
+        </div>
+    </header>
+    <div class="d-flex flex-grow-1">
+        <div class="d-flex align-items-center justify-content-center flex-grow-1">
+            <div class="card border-light">
+                <div class="card-body">
+                    <form id="login-form">
+                        <h2 class="mb-4 text-center" data-i18n="login.title">Healthcare Portal Login</h2>
+                        <div class="mb-3">
+                            <label for="username" class="form-label" data-i18n="login.username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username"
+                                data-i18n-placeholder="login.usernamePlaceholder">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label" data-i18n="login.password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                data-i18n-placeholder="login.passwordPlaceholder">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" data-i18n="login.submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-md-block w-50"
+            style="background-image: url('assets/login.png'); background-size: cover; background-position: center;">
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom translation script -->
+    <script src="js/translations.js"></script>
+</body>
+
+</html>

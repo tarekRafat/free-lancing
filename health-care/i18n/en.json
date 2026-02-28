@@ -1,0 +1,10 @@
+{
+  "login.title": "Healthcare Portal Login",
+  "login.username": "Username",
+  "login.usernamePlaceholder": "Enter username",
+  "login.password": "Password",
+  "login.passwordPlaceholder": "Enter password",
+  "login.submit": "Login",
+  "header.login": "Login",
+  "header.language": "العربية"
+}
