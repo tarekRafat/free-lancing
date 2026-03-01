@@ -11870,7 +11870,6 @@ textarea.form-control-lg {
   background-image: url("../assets/map.png");
   background-size: cover;
   background-position: center;
-  height: 100%;
 }
 .home-bg .accordion-button::after {
   margin-right: 0;
