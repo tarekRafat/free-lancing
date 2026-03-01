@@ -1,0 +1,22 @@
+// override Bootstrap's primary color
+$primary: #1b8354;
+
+// any other variable overrides could go here
+
+// include the rest of Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "login";
+// custom rules (mirroring the previous css)
+:root {
+  --bs-primary: #{$primary};
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: "Alexandria", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+p {
+  margin-bottom: 0;
+}

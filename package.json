@@ -1,0 +1,32 @@
+{
+  "name": "health-care",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass scss:css --no-source-map",
+    "build:ts": "tsc",
+    "watch:sass": "sass --watch scss:css",
+    "watch:ts": "tsc -w",
+    "copy:bootstrap": "copy \"node_modules\\bootstrap\\dist\\js\\bootstrap.bundle.min.js\" js\\",
+    "build": "npm run build:sass && npm run build:ts && npm run copy:bootstrap",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarekRafat/free-lancing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarekRafat/free-lancing/issues"
+  },
+  "homepage": "https://github.com/tarekRafat/free-lancing#readme",
+  "devDependencies": {
+    "@types/jquery": "^4.0.0",
+    "bootstrap": "^5.3.8",
+    "sass": "^1.97.3",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,10 +1,14 @@
 {
-  "login.title": "Healthcare Portal Login",
+  "login.title": "Log in to the Geospatial platform",
   "login.username": "Username",
   "login.usernamePlaceholder": "Enter username",
   "login.password": "Password",
   "login.passwordPlaceholder": "Enter password",
+  "login.loginToAccount": "Login to your account",
   "login.submit": "Login",
   "header.login": "Login",
+  "ministry.supplyAndEngineeringAffairsAgency":"Supply and Engineering Affairs Agency",
+  "ministry.generalAdministrationOfPropertyFollowUp":"General Administration of Property Follow-up",
+  "ministry.welcomeMessage":"Welcome to the Ministry of Health's Geospatial platform",
   "header.language": "العربية"
 }

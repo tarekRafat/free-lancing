@@ -5,6 +5,10 @@
   "login.password": "كلمة المرور",
   "login.passwordPlaceholder": "أدخل كلمة المرور الخاصة بك",
   "login.submit": "تسجيل الدخول",
+  "login.loginToAccount": "قم بتسجيل الدخول إلى حسابك ",
   "header.login": "تسجيل الدخول",
+  "ministry.supplyAndEngineeringAffairsAgency": "وكالة الإمداد والشؤون الهندسية",
+  "ministry.generalAdministrationOfPropertyFollowUp": "الإدارة العامة لمتابعة الممتلكات",
+  "ministry.welcomeMessage": "مرحبًا بكم في المنصةالجيومكانية لوزارة الصحة ",
   "header.language": "English"
 }
