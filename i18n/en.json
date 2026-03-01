@@ -7,8 +7,12 @@
   "login.loginToAccount": "Login to your account",
   "login.submit": "Login",
   "header.login": "Login",
-  "ministry.supplyAndEngineeringAffairsAgency":"Supply and Engineering Affairs Agency",
-  "ministry.generalAdministrationOfPropertyFollowUp":"General Administration of Property Follow-up",
-  "ministry.welcomeMessage":"Welcome to the Ministry of Health's Geospatial platform",
+  "ministry.supplyAndEngineeringAffairsAgency": "Supply and Engineering Affairs Agency",
+  "ministry.generalAdministrationOfPropertyFollowUp": "General Administration of Property Follow-up",
+  "ministry.welcomeMessage": "Welcome to the Ministry of Health's Geospatial platform",
+  "home.notification": "Notification",
+  "home.controlPanel": "Control Panel",
+  "home.hajjSeason": "Hajj Season",
+  "home": "Home",
   "header.language": "العربية"
 }

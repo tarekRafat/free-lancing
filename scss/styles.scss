@@ -1,11 +1,14 @@
 // override Bootstrap's primary color
 $primary: #1b8354;
+$black: #252525;
+$body-color: $black;
 
 // any other variable overrides could go here
 
 // include the rest of Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "login";
+@import "home";
 // custom rules (mirroring the previous css)
 :root {
   --bs-primary: #{$primary};
@@ -16,7 +19,18 @@ body {
   font-family: "Alexandria", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  color: $black;
 }
 p {
   margin-bottom: 0;
+}
+.navbar-expand-lg ul.navbar-nav  {
+  padding-right: 0;
+  .nav-link{
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
 }
