@@ -2,7 +2,7 @@
 /* global $ */ // let TypeScript know `$` is provided globally by jQuery
 var translations = {};
 function loadLanguage(lang) {
-    return $.getJSON("i18n/".concat(lang, ".json")).done(function (data) {
+    return $.getJSON("../i18n/".concat(lang, ".json")).done(function (data) {
         translations[lang] = data;
     });
 }

@@ -7,7 +7,7 @@ interface TranslationMap {
 const translations: Record<string, TranslationMap> = {};
 
 function loadLanguage(lang: string): JQuery.jqXHR {
-  return $.getJSON(`i18n/${lang}.json`).done((data: TranslationMap) => {
+  return $.getJSON(`../i18n/${lang}.json`).done((data: TranslationMap) => {
     translations[lang] = data;
   });
 }
