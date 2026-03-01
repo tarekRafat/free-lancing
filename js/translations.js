@@ -1,23 +1,51 @@
 "use strict";
 /* global $ */ // let TypeScript know `$` is provided globally by jQuery
 var translations = {};
+function getI18nBasePath() {
+    // when hosted under GitHub Pages the root of the repo is included in
+    // the path.  `../i18n` works from /login/ pages but fails from the
+    // root; otherwise `./i18n` is fine.
+    var path = window.location.pathname.toLowerCase();
+    if (path.indexOf("/login/") !== -1) {
+        return "../i18n/";
+    }
+    return "./i18n/";
+}
 function loadLanguage(lang) {
-    return $.getJSON("../i18n/".concat(lang, ".json")).done(function (data) {
+    var url = getI18nBasePath() + "".concat(lang, ".json");
+    console.debug("loading language file", url);
+    return $.getJSON(url)
+        .done(function (data) {
         translations[lang] = data;
+    })
+        .fail(function (jqxhr, textStatus, error) {
+        console.error("failed to load language file", url, textStatus, error);
     });
 }
 function applyTranslations(lang) {
+    var dict = translations[lang] || {};
     $("[data-i18n]").each(function () {
         var key = $(this).data("i18n");
-        $(this).text(translations[lang][key]);
+        if (dict[key] !== undefined) {
+            $(this).text(dict[key]);
+        }
+        else {
+            console.warn("missing translation", lang, key);
+        }
     });
     $("[data-i18n-placeholder]").each(function () {
         var key = $(this).data("i18n-placeholder");
-        $(this).attr("placeholder", translations[lang][key]);
+        if (dict[key] !== undefined) {
+            $(this).attr("placeholder", dict[key]);
+        }
+        else {
+            console.warn("missing translation (placeholder)", lang, key);
+        }
     });
-    $("#header-login-btn").text(translations[lang]["header.login"]);
-    console.log($("#language-btn").text());
-    $("#language-btn p").text(translations[lang]["header.language"]);
+    if (dict["header.login"] !== undefined) {
+        $("#header-login-btn").text(dict["header.login"]);
+    }
+    $("#language-btn p").text(dict["header.language"] || $("#language-btn p").text());
     $("html").attr("lang", lang);
     if (lang === "ar") {
         $("html").attr("dir", "rtl");
