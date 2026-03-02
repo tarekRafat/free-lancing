@@ -11898,10 +11898,6 @@ p {
 .navbar-expand-lg ul.navbar-nav {
   padding-right: 0;
 }
-.navbar-expand-lg ul.navbar-nav .nav-link {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 
 .cursor-pointer {
   cursor: pointer;
